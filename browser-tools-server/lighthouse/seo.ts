@@ -1,5 +1,6 @@
-import { Result as LighthouseResult } from "lighthouse";
-import { AuditCategory, LighthouseReport } from "./types.js";
+import type { Result as LighthouseResult } from "lighthouse";
+import type { LighthouseReport } from "./types.js";
+import { AuditCategory } from "./types.js";
 import { runLighthouseAudit } from "./index.js";
 
 // === SEO Report Types ===

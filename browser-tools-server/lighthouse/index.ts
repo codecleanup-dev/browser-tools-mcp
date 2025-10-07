@@ -4,7 +4,8 @@ import {
   connectToHeadlessBrowser,
   scheduleBrowserCleanup,
 } from "../puppeteer-service.js";
-import { LighthouseConfig, AuditCategory } from "./types.js";
+import type { LighthouseConfig} from "./types.js";
+import { AuditCategory } from "./types.js";
 
 /**
  * Creates a Lighthouse configuration object

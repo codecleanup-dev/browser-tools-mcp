@@ -7,16 +7,17 @@ import { tokenizeAndEstimateCost } from "llm-cost";
 import { WebSocketServer, WebSocket } from "ws";
 import fs from "fs";
 import path from "path";
-import { IncomingMessage } from "http";
-import { Socket } from "net";
+import type { IncomingMessage } from "http";
+import type { Socket } from "net";
 import os from "os";
 import { exec } from "child_process";
+import type {
+  LighthouseReport} from "./lighthouse/index.js";
 import {
   runPerformanceAudit,
   runAccessibilityAudit,
   runSEOAudit,
-  AuditCategory,
-  LighthouseReport,
+  AuditCategory
 } from "./lighthouse/index.js";
 import * as net from "net";
 import { runBestPracticesAudit } from "./lighthouse/best-practices.js";
